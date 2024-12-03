@@ -12,6 +12,17 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        "welcome-gradient":
+          "linear-gradient(358.05deg, #FF8000 -40.75%, #FFFFFF 98.27%)",
+        "spinner-gradient":
+          "linear-gradient(358.05deg, #FF8000 20.75%, #FFFFFF 98.27%)",
+      },
+      fontFamily: {
+        geistSans: "var(--font-geist-sans)",
+        geistMono: "var(--font-geist-mono)",
+        krona: "var(--font-krona)",
+      },
     },
   },
   plugins: [],
