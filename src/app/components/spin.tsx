@@ -1,8 +1,13 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import PlayModal from "./Game/PlayModal";
+import OutofSpin from "./Game/OutofSpin";
 
 export default function Spin() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <div className="flex flex-col items-center pt-12 h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
       <div className="absolute inset-0 bg-overlay-gradient"></div>
@@ -95,7 +100,10 @@ export default function Spin() {
 
           <div className="flex flex-col items-center justify-center gap-11">
             <div className="flex justify-center relative">
-              <Button className="text-2xl !h-[54px] !rounded-[40px] font-krona font-normal  !py-3 !px-6">
+              <Button
+                className="text-2xl !h-[54px] !rounded-[40px] font-krona font-normal !py-3 !px-6"
+                onClick={() => setOpen(true)}
+              >
                 Play & Spin
               </Button>
               <Image
@@ -152,6 +160,9 @@ export default function Spin() {
           </div>
         </footer>
       </section>
+
+      {/* <PlayModal open={isOpen} setOpen={setOpen} /> */}
+      <OutofSpin open={isOpen} setOpen={setOpen} />
     </div>
   );
 }

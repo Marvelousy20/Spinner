@@ -55,7 +55,7 @@ export default function Welcome() {
           </div>
 
           <div className="flex justify-center mt-12 ">
-            <Button className="text-2xl !h-[54px] !rounded-[40px] font-krona font-normal  !py-3 !px-6">
+            <Button className="text-2xl !h-[54px] !rounded-[40px] font-krona font-normal !py-3 !px-6">
               <Link href="/connect">I Agree</Link>
             </Button>
           </div>

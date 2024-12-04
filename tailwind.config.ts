@@ -19,8 +19,11 @@ export default {
           "linear-gradient(358.05deg, #FF8000 20.75%, #FFFFFF 98.27%)",
         "overlay-gradient":
           "linear-gradient(180deg, #170F0C 0%, #2F1201 140.22%)",
+        "button-gradient": "linear-gradient(180deg, #EE7F0E 0%, #884908 100%);",
       },
-
+      boxShadow: {
+        customInset: "inset 0px 1.12px 0px 0px rgba(37, 75, 37, 0.2)",
+      },
       fontFamily: {
         geistSans: "var(--font-geist-sans)",
         geistMono: "var(--font-geist-mono)",
