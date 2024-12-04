@@ -17,7 +17,10 @@ export default {
           "linear-gradient(358.05deg, #FF8000 -40.75%, #FFFFFF 98.27%)",
         "spinner-gradient":
           "linear-gradient(358.05deg, #FF8000 20.75%, #FFFFFF 98.27%)",
+        "overlay-gradient":
+          "linear-gradient(180deg, #170F0C 0%, #2F1201 140.22%)",
       },
+
       fontFamily: {
         geistSans: "var(--font-geist-sans)",
         geistMono: "var(--font-geist-mono)",

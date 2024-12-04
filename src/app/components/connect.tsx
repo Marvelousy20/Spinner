@@ -2,9 +2,8 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import Link from "next/link";
 
-export default function Welcome() {
+export default function ConnetWallet() {
   return (
     <div className="flex flex-col items-center pt-12 h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
       <div className="absolute inset-0 bg-overlay-gradient"></div>
@@ -14,47 +13,49 @@ export default function Welcome() {
         </div>
         <h1 className="text-3xl text-center font-krona w-[330px]">
           <span className="bg-welcome-gradient bg-clip-text text-transparent">
-            Welcome to
+            Connect
           </span>{" "}
           <br />
           <span className="bg-spinner-gradient bg-clip-text text-transparent">
-            Spinner Betting
+            Your Wallet
           </span>
         </h1>
 
         <div className="mt-8 text-white">
-          <h3 className="text-center">To continue, confirm the following:</h3>
+          <h3 className="text-center">
+            Secure your transactions to get started
+          </h3>
 
           <div className="mt-10 space-y-2.5 z-10 ">
             <div className="flex items-center justify-between bg-[#221610] w-full">
-              <h1 className=" px-2.5 py-3.5 rounded-[5px] w-[196px]">
-                You are 18+ years old
+              <h1 className=" px-2.5 py-3.5 rounded-[5px] w-[263px]">
+                To play the Spinner Betting game, please connect your Haman
+                Wallet. This will enable token payments and reward withdrawals.
               </h1>
-              <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#8C8683]">
-                <Checkbox />
+              <div>
+                {" "}
+                <Image
+                  src="/wallet.png"
+                  width={32.66}
+                  height={33}
+                  alt=""
+                />{" "}
               </div>
             </div>
             <div className="flex items-center justify-between bg-[#221610] w-full">
-              <h1 className=" px-2.5 py-3.5 w-[196px]">
-                You agree to both win and lose funds
+              <h1 className=" px-2.5 py-3.5 w-[288px]">
+                Your wallet information is safe and secure.
               </h1>
-              <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#8C8683]">
-                <Checkbox />
-              </div>
-            </div>
-            <div className="flex items-center justify-between bg-[#221610] w-full">
-              <h1 className=" px-2.5 py-3.5 w-[196px]">
-                You are 18+ years old
-              </h1>
-              <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#8C8683]">
-                <Checkbox />
+              <div>
+                {" "}
+                <Image src="/lock.svg" width={32.66} height={33} alt="" />{" "}
               </div>
             </div>
           </div>
 
           <div className="flex justify-center mt-12 ">
             <Button className="text-2xl !h-[54px] !rounded-[40px] font-krona font-normal  !py-3 !px-6">
-              <Link href="/connect">I Agree</Link>
+              Connect Wallet
             </Button>
           </div>
         </div>
