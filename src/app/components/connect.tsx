@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
 
 export default function ConnetWallet() {
@@ -28,28 +27,22 @@ export default function ConnetWallet() {
           </h3>
 
           <div className="mt-10 space-y-2.5 z-10 ">
-            <div className="flex items-center justify-between bg-[#221610] w-full">
-              <h1 className=" px-2.5 py-3.5 rounded-[5px] w-[263px]">
+            <div className="flex items-center justify-between bg-[#221610] rounded-[3px] w-full px-2.5">
+              <h1 className="py-3.5 rounded-[5px] w-[263px]">
                 To play the Spinner Betting game, please connect your Haman
                 Wallet. This will enable token payments and reward withdrawals.
               </h1>
               <div>
-                {" "}
-                <Image
-                  src="/wallet.png"
-                  width={32.66}
-                  height={33}
-                  alt=""
-                />{" "}
+                <Image src="/wallet.png" width={32.66} height={33} alt="" />
               </div>
             </div>
-            <div className="flex items-center justify-between bg-[#221610] w-full">
-              <h1 className=" px-2.5 py-3.5 w-[288px]">
+            <div className="flex items-center justify-between bg-[#221610] rounded-[3px] w-full px-2.5">
+              <h1 className="py-3.5 w-[288px]">
                 Your wallet information is safe and secure.
               </h1>
               <div>
                 {" "}
-                <Image src="/lock.svg" width={32.66} height={33} alt="" />{" "}
+                <Image src="/lock.svg" width={32.66} height={33} alt="" />
               </div>
             </div>
           </div>
@@ -66,7 +59,7 @@ export default function ConnetWallet() {
         width={524.26}
         height={297}
         alt=""
-        className=" absolute bottom-0"
+        className="absolute bottom-0"
       />
     </div>
   );

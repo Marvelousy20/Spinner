@@ -1,13 +1,12 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 
 export default function Level() {
   return (
-    <div className="flex flex-col items-center pt-12 h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
+    <div className="flex flex-col items-center pt-12 min-h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
       <div className="absolute inset-0 bg-overlay-gradient"></div>
-      <section className="relative z-10 flex flex-col h-screen overflow-y-scroll mb-16">
+      <section className="relative z-10 flex flex-col mb-16">
         <h1 className="text-3xl text-center font-krona w-[330px]">
           <span className="bg-welcome-gradient bg-clip-text text-transparent">
             Select Your

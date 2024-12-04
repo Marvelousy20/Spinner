@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Nunito_Sans } from "next/font/google";
+
 import "./globals.css";
 
 const geistSans = localFont({
@@ -15,7 +17,10 @@ const geistMono = localFont({
 const krona = localFont({
   src: "./fonts/KronaOne-Regular.ttf",
   variable: "--font-krona",
+  weight: "400",
 });
+
+const nunito = Nunito_Sans({ subsets: ["latin"], variable: "--font-nunito" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${krona.variable} antialiased max-w-[420px] mx-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} ${krona.variable} ${nunito.className} antialiased max-w-[450px] mx-auto`}
       >
         {children}
       </body>

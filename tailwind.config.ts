@@ -25,6 +25,7 @@ export default {
         geistSans: "var(--font-geist-sans)",
         geistMono: "var(--font-geist-mono)",
         krona: "var(--font-krona)",
+        nunito: "var(--font-nunito)",
       },
     },
   },
