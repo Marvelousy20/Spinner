@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import Link from "next/link";
 
 export default function ConnetWallet() {
   return (
@@ -55,7 +56,7 @@ export default function ConnetWallet() {
 
           <div className="flex justify-center mt-12 ">
             <Button className="text-2xl !h-[54px] !rounded-[40px] font-krona font-normal  !py-3 !px-6">
-              Connect Wallet
+              <Link href="/level">Connect Wallet</Link>
             </Button>
           </div>
         </div>
