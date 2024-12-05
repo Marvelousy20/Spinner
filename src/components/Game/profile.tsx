@@ -35,7 +35,7 @@ export default function Profile() {
           My Profile
         </h1>
 
-        <div className="flex items-center justify-center gap-3 my-[31px]">
+        <div className="flex items-center  gap-3 my-[31px]">
           <Image src="/user2.svg" width={60} height={60} alt="" />
           <div className="flex flex-col gap-2">
             <h3 className="font-medium text-2xl text-white font-nunito">

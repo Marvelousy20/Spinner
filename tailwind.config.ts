@@ -25,6 +25,7 @@ export default {
 
       boxShadow: {
         customInset: "inset 0px 1.12px 0px 0px rgba(37, 75, 37, 0.2)",
+        glow: "0 0 10px 4px rgba(255, 165, 0, 0.5)",
       },
       fontFamily: {
         geistSans: "var(--font-geist-sans)",
