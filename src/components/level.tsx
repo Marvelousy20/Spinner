@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Level() {
   return (
@@ -37,9 +38,11 @@ export default function Level() {
               wins with low-value rewards.
             </p>
             <div className="flex justify-center ">
-              <Button className="!h-[27px] !rounded-[40px] font-krona font-normal !py-3 !px-6 text-sm">
-                Play
-              </Button>
+              <Link href="/spin">
+                <Button className="!h-[27px] !rounded-[40px] font-krona font-normal !py-3 !px-6 text-sm">
+                  Play
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -64,9 +67,11 @@ export default function Level() {
               chances of winning with higher-value prizes.
             </p>
             <div className="flex justify-center ">
-              <Button className="!h-[27px] !rounded-[40px] font-krona font-normal text-sm !py-3 !px-6">
-                Play
-              </Button>
+              <Link href="/spin">
+                <Button className="!h-[27px] !rounded-[40px] font-krona font-normal !py-3 !px-6 text-sm">
+                  Play
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -95,9 +100,11 @@ export default function Level() {
               MEM tokens.
             </p>
             <div className="flex justify-center ">
-              <Button className="text-sm !h-[27px] !rounded-[40px] font-krona font-normal !py-3 !px-6">
-                Play
-              </Button>
+              <Link href="/spin">
+                <Button className="!h-[27px] !rounded-[40px] font-krona font-normal !py-3 !px-6 text-sm">
+                  Play
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
