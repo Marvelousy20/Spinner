@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ShopNft from "../Shop/nfts";
 import Tokens from "../Shop/tokens";
