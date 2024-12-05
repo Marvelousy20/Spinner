@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import PlayModal from "./Game/PlayModal";
+import Footer from "./footer";
 // import OutofSpin from "./Game/OutofSpin";
 
 export default function Spin() {
@@ -21,14 +22,14 @@ export default function Spin() {
             Spin to Win!
           </h1>
 
-          <div className="flex">
+          <div className="flex px-8 relative">
             <div className="mt-4">
               <Image
                 src="/spinflower.svg"
                 width={32}
                 height={32}
                 alt="flower"
-                className=""
+                className="absolute left-0"
               />
             </div>
             <div className="bg-[#221610] flex items-center justify-center gap-6 w-full px-2.5 py-3.5 rounded-[3px]">
@@ -137,28 +138,7 @@ export default function Spin() {
           </div>
         </section>
 
-        <footer className="fixed bottom-0 left-0 flex items-center justify-between gap-6 py-5 px-10 bg-[#211814] cursor-pointer !w-full !z-20 rounded-t-3xl">
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/board.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Leaderboard</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/spin.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Game</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/shop.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Shop</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/profile.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Profile</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/history.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">History</p>
-          </div>
-        </footer>
+        <Footer />
       </section>
 
       <PlayModal open={isOpen} setOpen={setOpen} />

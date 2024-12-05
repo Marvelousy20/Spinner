@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Footer from "../footer";
 
 export default function Loss() {
   return (
@@ -73,28 +74,7 @@ export default function Loss() {
           </div>
         </section>
 
-        <footer className="fixed bottom-0 left-0 flex items-center justify-between gap-6 py-5 px-10 bg-[#211814] cursor-pointer !w-full !z-20 rounded-t-3xl">
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/board.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Leaderboard</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/spin.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Game</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/shop.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Shop</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/profile.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Profile</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/history.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">History</p>
-          </div>
-        </footer>
+        <Footer />
       </section>
     </div>
   );
