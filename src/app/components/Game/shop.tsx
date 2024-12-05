@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
@@ -58,7 +58,7 @@ export default function Shop() {
 
         <div className="grid grid-cols-2 gap-y-3 mt-[45px] mb-[100px]">
           {shop.map((item, idx) => (
-            <div className="w-[147px] border border-red-600">
+            <div className="w-[147px] border border-red-600" key={idx}>
               <Image
                 src="/avatar.svg"
                 width={143}

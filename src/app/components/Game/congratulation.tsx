@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
@@ -38,7 +38,7 @@ export default function Congratulations() {
               </p>
               <div className="flex flex-col gap-3 items-center justify-center relative">
                 <p className="w-[287px] text-center font-normal text-xl text-white font-nunito">
-                  All the mushrooms matched your bet! You've won 1000SBT!
+                  All the mushrooms matched your bet! You&apos;ve won 1000SBT!
                 </p>
                 <p className="w-[287px] text-center font-normal font-nunito text-xs text-white">
                   Amazing luck! Keep going to win even more!

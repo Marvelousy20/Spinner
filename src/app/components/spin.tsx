@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import PlayModal from "./Game/PlayModal";
-import OutofSpin from "./Game/OutofSpin";
+// import OutofSpin from "./Game/OutofSpin";
 
 export default function Spin() {
   const [isOpen, setOpen] = useState(false);
@@ -161,8 +161,8 @@ export default function Spin() {
         </footer>
       </section>
 
-      {/* <PlayModal open={isOpen} setOpen={setOpen} /> */}
-      <OutofSpin open={isOpen} setOpen={setOpen} />
+      <PlayModal open={isOpen} setOpen={setOpen} />
+      {/* <OutofSpin open={isOpen} setOpen={setOpen} /> */}
     </div>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
-import { useState } from "react";
+
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 export default function TopWinner() {
   const winners = [
@@ -61,7 +60,10 @@ export default function TopWinner() {
 
         <div className="flex flex-col gap-4 mt-[33px]">
           {winners.map((item, idx) => (
-            <div className="w-full flex items-center justify-between bg-[#352924] text-white font-normal font-nunito rounded-[11.83px] p-3">
+            <div
+              className="w-full flex items-center justify-between bg-[#352924] text-white font-normal font-nunito rounded-[11.83px] p-3"
+              key={idx}
+            >
               <div className="flex items-center gap-3">
                 <p className="text-[19.22px]">{item.no}</p>
                 <Image src={item.image} width={30} height={30} alt="plant" />
