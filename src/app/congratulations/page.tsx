@@ -1,5 +1,5 @@
 import React from "react";
-import Congratulations from "../components/Game/congratulation";
+import Congratulations from "@/components/Game/congratulation";
 
 const page = () => {
   return <Congratulations />;

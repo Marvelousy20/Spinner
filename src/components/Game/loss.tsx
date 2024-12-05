@@ -1,20 +1,19 @@
 "use client";
-// import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-export default function Congratulations() {
+export default function Loss() {
   return (
-    <div className="flex flex-col items-center pt-12 h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
+    <div className="flex flex-col items-center pt-12 min-h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
       <div className="absolute inset-0 bg-overlay-gradient"></div>
-      <section className="relative z-10 flex flex-col h-screen overflow-y-scroll">
+      <section className="relative z-10 flex flex-col min-h-screen">
         <h3 className="bg-spinner-gradient text-center bg-clip-text text-transparent font-normal text-3xl font-krona">
-          Congratulations
+          Try Again
         </h3>
 
         <section>
-          <div className="mt-[46px] relative flex flex-col items-center justify-center">
-            <Image src="/light.svg" width={336} height={347} alt="light" />
+          <div className="mt-[46px] flex flex-col items-center justify-center relative">
+            <Image src="/ops.svg" width={200} height={347} alt="light" />
             <Image
               src="/congratleftflower.svg"
               width={49}
@@ -31,17 +30,17 @@ export default function Congratulations() {
             />
           </div>
 
-          <div className="flex flex-col items-center mt-[50px] justify-center gap-11">
+          <div className="flex flex-col items-center justify-center mt-[50px] gap-11">
             <div className="flex flex-col gap-4 justify-center">
               <p className="font-normal text-center text-4xl font-nunito text-white">
-                You won
+                You Loss
               </p>
               <div className="flex flex-col gap-3 items-center justify-center relative">
                 <p className="w-[287px] text-center font-normal text-xl text-white font-nunito">
-                  All the mushrooms matched your bet! You&apos;ve won 1000SBT!
+                  The Mushrooms Didn&apos;t Match This Time!
                 </p>
                 <p className="w-[287px] text-center font-normal font-nunito text-xs text-white">
-                  Amazing luck! Keep going to win even more!
+                  Try Again—Your Luck&apos;s Just Around the Corner!
                 </p>
                 <Image
                   src="/wonleft.svg"
@@ -74,7 +73,7 @@ export default function Congratulations() {
           </div>
         </section>
 
-        <footer className="flex items-center justify-center gap-6 py-5  bg-[#211814] cursor-pointer">
+        <footer className="fixed bottom-0 left-0 flex items-center justify-between gap-6 py-5 px-10 bg-[#211814] cursor-pointer !w-full !z-20 rounded-t-3xl">
           <div className="flex flex-col gap-2 items-center">
             <Image src="/board.svg" width={32} height={32} alt="" />
             <p className="font-normal text-xs text-[#BCBCBC]">Leaderboard</p>

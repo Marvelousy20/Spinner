@@ -1,19 +1,20 @@
 "use client";
+// import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-export default function Loss() {
+export default function Congratulations() {
   return (
-    <div className="flex flex-col items-center pt-12 h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
+    <div className="flex flex-col items-center pt-12 min-h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative pb-10">
       <div className="absolute inset-0 bg-overlay-gradient"></div>
-      <section className="relative z-10 flex flex-col h-screen overflow-y-scroll">
+      <section className="relative z-10 flex flex-col">
         <h3 className="bg-spinner-gradient text-center bg-clip-text text-transparent font-normal text-3xl font-krona">
-          Try Again
+          Congratulations
         </h3>
 
         <section>
-          <div className="mt-[46px] flex flex-col items-center justify-center relative">
-            <Image src="/ops.svg" width={200} height={347} alt="light" />
+          <div className="mt-[46px] relative flex flex-col items-center justify-center">
+            <Image src="/light.svg" width={336} height={347} alt="light" />
             <Image
               src="/congratleftflower.svg"
               width={49}
@@ -30,17 +31,17 @@ export default function Loss() {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center mt-[50px] gap-11">
+          <div className="flex flex-col items-center mt-[50px] justify-center gap-11">
             <div className="flex flex-col gap-4 justify-center">
               <p className="font-normal text-center text-4xl font-nunito text-white">
-                You Loss
+                You won
               </p>
               <div className="flex flex-col gap-3 items-center justify-center relative">
                 <p className="w-[287px] text-center font-normal text-xl text-white font-nunito">
-                  The Mushrooms Didn&apos;t Match This Time!
+                  All the mushrooms matched your bet! You&apos;ve won 1000SBT!
                 </p>
                 <p className="w-[287px] text-center font-normal font-nunito text-xs text-white">
-                  Try Again—Your Luck&apos;s Just Around the Corner!
+                  Amazing luck! Keep going to win even more!
                 </p>
                 <Image
                   src="/wonleft.svg"
@@ -72,30 +73,30 @@ export default function Loss() {
             <Image src="/algae.svg" width={217} height={148} alt="plant" />
           </div>
         </section>
-
-        <footer className="flex items-center justify-center gap-6 py-5  bg-[#211814] cursor-pointer">
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/board.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Leaderboard</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/spin.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Game</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/shop.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Shop</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/profile.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">Profile</p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <Image src="/history.svg" width={32} height={32} alt="" />
-            <p className="font-normal text-xs text-[#BCBCBC]">History</p>
-          </div>
-        </footer>
       </section>
+
+      <footer className="fixed bottom-0 left-0 flex items-center justify-between gap-6 py-5 px-10 bg-[#211814] cursor-pointer !w-full !z-20 rounded-t-3xl">
+        <div className="flex flex-col gap-2 items-center">
+          <Image src="/board.svg" width={32} height={32} alt="" />
+          <p className="font-normal text-xs text-[#BCBCBC]">Leaderboard</p>
+        </div>
+        <div className="flex flex-col gap-2 items-center">
+          <Image src="/spin.svg" width={32} height={32} alt="" />
+          <p className="font-normal text-xs text-[#BCBCBC]">Game</p>
+        </div>
+        <div className="flex flex-col gap-2 items-center">
+          <Image src="/shop.svg" width={32} height={32} alt="" />
+          <p className="font-normal text-xs text-[#BCBCBC]">Shop</p>
+        </div>
+        <div className="flex flex-col gap-2 items-center">
+          <Image src="/profile.svg" width={32} height={32} alt="" />
+          <p className="font-normal text-xs text-[#BCBCBC]">Profile</p>
+        </div>
+        <div className="flex flex-col gap-2 items-center">
+          <Image src="/history.svg" width={32} height={32} alt="" />
+          <p className="font-normal text-xs text-[#BCBCBC]">History</p>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -17,7 +17,7 @@ export default function Level() {
           </span>
         </h1>
 
-        <div className=" bg-[#221610] flex flex-col gap-6 w-full px-2.5 py-3.5 mt-[37px] rounded-[3px]">
+        <div className=" bg-[#221610] flex flex-col gap-6 w-full px-8 py-10 mt-[37px] rounded-[3px]">
           <h1 className="font-normal text-2xl font-krona text-center bg-spinner-gradient bg-clip-text text-transparent">
             Easy Wins
           </h1>
@@ -37,14 +37,14 @@ export default function Level() {
               wins with low-value rewards.
             </p>
             <div className="flex justify-center ">
-              <Button className="text-2xl !h-[54px] !rounded-[40px] font-krona font-normal  !py-3 !px-6">
+              <Button className="!h-[27px] !rounded-[40px] font-krona font-normal !py-3 !px-6 text-sm">
                 Play
               </Button>
             </div>
           </div>
         </div>
 
-        <div className=" bg-[#221610] flex flex-col gap-6 w-full px-2.5 py-3.5 mt-[37px] rounded-[3px]">
+        <div className=" bg-[#221610] flex flex-col gap-6 w-full px-8 py-10 mt-[37px] rounded-[3px]">
           <h1 className="font-normal text-2xl font-krona text-center bg-spinner-gradient bg-clip-text text-transparent">
             Medium Difficulty
           </h1>
@@ -64,20 +64,19 @@ export default function Level() {
               chances of winning with higher-value prizes.
             </p>
             <div className="flex justify-center ">
-              <Button className="text-2xl !h-[54px] !rounded-[40px] font-krona font-normal  !py-3 !px-6">
+              <Button className="!h-[27px] !rounded-[40px] font-krona font-normal text-sm !py-3 !px-6">
                 Play
               </Button>
             </div>
           </div>
         </div>
 
-        <div className=" bg-[#221610] flex flex-col gap-6 w-full px-2.5 py-3.5 mt-[37px] rounded-[3px]">
+        <div className=" bg-[#221610] flex flex-col gap-6 w-full px-8 py-10 mt-[37px] rounded-[3px]">
           <h1 className="font-normal text-2xl font-krona text-center bg-spinner-gradient bg-clip-text text-transparent">
             High Stakes
           </h1>
           <div className="font-bold text-sm flex flex-col gap-3">
             <p className="text-white">
-              {" "}
               <span className="text-[#FF8000]">Prizes: </span> Big tokens and
               NFTs.
             </p>
@@ -96,7 +95,7 @@ export default function Level() {
               MEM tokens.
             </p>
             <div className="flex justify-center ">
-              <Button className="text-2xl !h-[54px] !rounded-[40px] font-krona font-normal  !py-3 !px-6">
+              <Button className="text-sm !h-[27px] !rounded-[40px] font-krona font-normal !py-3 !px-6">
                 Play
               </Button>
             </div>

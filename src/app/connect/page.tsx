@@ -1,5 +1,5 @@
 import React from "react";
-import ConnetWallet from "../components/connect";
+import ConnetWallet from "@/components/connect";
 
 const page = () => {
   return <ConnetWallet />;

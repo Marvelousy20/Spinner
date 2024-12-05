@@ -9,9 +9,9 @@ export default function Spin() {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="flex flex-col items-center pt-12 h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
+    <div className="flex flex-col items-center pt-12 min-h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
       <div className="absolute inset-0 bg-overlay-gradient"></div>
-      <section className="relative z-10 flex flex-col h-screen overflow-y-scroll">
+      <section className="relative z-10 flex flex-col min-h-screen">
         <div className="flex flex-col gap-7">
           <div className="flex items-center gap-6 justify-center font-normal text-[0.63rem] text-white">
             <h3>Time to buy more spins</h3>
@@ -137,7 +137,7 @@ export default function Spin() {
           </div>
         </section>
 
-        <footer className="flex items-center justify-center gap-6 py-5  bg-[#211814] cursor-pointer">
+        <footer className="fixed bottom-0 left-0 flex items-center justify-between gap-6 py-5 px-10 bg-[#211814] cursor-pointer !w-full !z-20 rounded-t-3xl">
           <div className="flex flex-col gap-2 items-center">
             <Image src="/board.svg" width={32} height={32} alt="" />
             <p className="font-normal text-xs text-[#BCBCBC]">Leaderboard</p>

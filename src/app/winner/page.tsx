@@ -1,5 +1,5 @@
 import React from "react";
-import TopWinner from "../components/Game/top-winners";
+import TopWinner from "@/components/Game/top-winners";
 
 const page = () => {
   return <TopWinner />;

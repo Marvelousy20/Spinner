@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../components/Game/profile";
+import Profile from "@/components/Game/profile";
 
 const page = () => {
   return <Profile />;

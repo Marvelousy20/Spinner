@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Switch } from "@/components/ui/switch";
+import { Switch } from "../ui/switch";
+import { Button } from "../ui/button";
 
 export default function Profile() {
   const user = [
@@ -27,9 +28,9 @@ export default function Profile() {
     },
   ];
   return (
-    <div className="flex flex-col items-center pt-12 h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
+    <div className="flex flex-col items-center pt-12 min-h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative">
       <div className="absolute inset-0 bg-overlay-gradient"></div>
-      <section className="relative z-10 flex flex-col h-screen overflow-y-scroll">
+      <section className="relative z-10 flex flex-col min-h-screen w-full px-14">
         <h1 className="font-normal text-2xl font-krona text-center bg-spinner-gradient bg-clip-text text-transparent">
           My Profile
         </h1>
@@ -78,9 +79,18 @@ export default function Profile() {
               <Switch />
             </div>
           </div>
+
+          <div className="grid grid-cols-2 gap-2 font-krona">
+            <Button className="text-[.65rem] rounded-[3px] bg-button-gradient">
+              Disconnect Wallet
+            </Button>
+            <Button className="text-[.65rem] rounded-[3px] bg-button-gradient">
+              Reconnect Wallet
+            </Button>
+          </div>
         </div>
 
-        <footer className="flex items-center justify-center gap-6 py-5  bg-[#211814] cursor-pointer">
+        <footer className="fixed bottom-0 left-0 flex items-center justify-between gap-6 py-5 px-10 bg-[#211814] cursor-pointer !w-full !z-20 rounded-t-3xl">
           <div className="flex flex-col gap-2 items-center">
             <Image src="/board.svg" width={32} height={32} alt="" />
             <p className="font-normal text-xs text-[#BCBCBC]">Leaderboard</p>
