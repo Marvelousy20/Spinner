@@ -41,7 +41,7 @@ export default function TopWinner() {
     },
   ];
   return (
-    <div className="flex flex-col items-center pt-12 min-h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative pb-10">
+    <div className="flex flex-col items-center pt-12 min-h-screen w-full bg-[url('/layout.png')] bg-cover bg-center relative pb-20">
       <div className="absolute inset-0 bg-overlay-gradient"></div>
       <section className="relative z-10 flex flex-col min-h-screen">
         <h1 className="text-3xl text-center font-krona w-[330px]">
@@ -55,7 +55,7 @@ export default function TopWinner() {
         </h1>
 
         <div className="flex items-center justify-center mt-[40px]">
-          <Image src="/top.svg" width={294} height={210} alt="top" />
+          <Image src="/Top.svg" width={294} height={210} alt="top" />
         </div>
 
         <div className="flex flex-col gap-4 mt-[33px]">
