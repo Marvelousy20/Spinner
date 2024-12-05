@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ShopNft from "../Shop/nfts";
+import Tokens from "../Shop/tokens";
+import Items from "../Shop/items";
 
 export default function Shop() {
   return (
@@ -24,19 +25,19 @@ export default function Shop() {
           <TabsList className="grid w-full grid-cols-3 gap-x-4 !bg-[#211814] font-krona">
             <TabsTrigger
               value="nfts"
-              className="cursor-pointer h-[28px] flex justify-center bg-nft-gradient items-center rounded-md text-[.6rem]"
+              className="cursor-pointer h-[28px] flex justify-center bg-[#352924] items-center text-white rounded-md text-[.6rem] data-[state=active]:bg-nft-gradient"
             >
               NFTs
             </TabsTrigger>
             <TabsTrigger
               value="tokens"
-              className="cursor-pointer h-[28px] flex justify-center bg-[#352924] items-center rounded-md text-[.6rem] text-white"
+              className="cursor-pointer h-[28px] flex justify-center bg-[#352924] items-center rounded-md text-[.6rem] text-white data-[state=active]:bg-nft-gradient"
             >
               Tokens
             </TabsTrigger>
             <TabsTrigger
               value="items"
-              className="cursor-pointer h-[28px] flex justify-center bg-[#352924] items-center rounded-md text-[.6rem] text-white"
+              className="cursor-pointer h-[28px] flex justify-center bg-[#352924] items-center rounded-md text-[.6rem] text-white data-[state=active]:bg-nft-gradient"
             >
               Exclusive Items
             </TabsTrigger>
@@ -45,8 +46,12 @@ export default function Shop() {
           <TabsContent value="nfts">
             <ShopNft />
           </TabsContent>
-          <TabsContent value="tokens"></TabsContent>
-          <TabsContent value="items"></TabsContent>
+          <TabsContent value="tokens">
+            <Tokens />
+          </TabsContent>
+          <TabsContent value="items">
+            <Items />
+          </TabsContent>
         </Tabs>
 
         <footer className="fixed bottom-0 left-0 flex items-center justify-between gap-6 py-5 px-10 bg-[#211814] cursor-pointer !w-full !z-20 rounded-t-3xl">
